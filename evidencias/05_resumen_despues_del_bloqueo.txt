@@ -1,0 +1,10 @@
+ Container examen-ventas-permissions-1 Starting 
+ Container examen-ventas-permissions-1 Started 
+ Container examen-ventas-permissions-1 Waiting 
+ Container examen-ventas-permissions-1 Exited 
+ Container examen-ventas-cli-run-4adef53aefd5 Creating 
+ Container examen-ventas-cli-run-4adef53aefd5 Created 
+['fecha_venta', 'numero_ventas', 'unidades_vendidas', 'ingreso_total']
+(datetime.date(2026, 1, 10), 2, 3, Decimal('46.00'))
+(datetime.date(2026, 1, 11), 3, 6, Decimal('51.25'))
+(datetime.date(2026, 1, 12), 1, 4, Decimal('12.40'))

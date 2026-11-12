@@ -1,0 +1,27 @@
+ Container examen-ventas-permissions-1 Starting 
+ Container examen-ventas-permissions-1 Started 
+ Container examen-ventas-permissions-1 Waiting 
+ Container examen-ventas-permissions-1 Exited 
+ Container examen-ventas-cli-run-275887e22f45 Creating 
+ Container examen-ventas-cli-run-275887e22f45 Created 
+INICIO dbt ['source', 'freshness']
+[0m13:02:53  Running with dbt=1.9.4
+[0m13:02:54  Registered adapter: duckdb=1.9.2
+[0m13:02:54  Found 2 models, 17 data tests, 1 source, 426 macros
+[0m13:02:54  
+[0m13:02:54  Concurrency: 1 threads (target='local')
+[0m13:02:54  
+[0m13:02:54  1 of 1 START freshness of ventas_raw.ventas .................................... [RUN]
+[0m13:02:54  1 of 1 ERROR STALE freshness of ventas_raw.ventas .............................. [[31mERROR STALE[0m in 0.03s]
+[0m13:02:54  
+[0m13:02:54  Finished running 1 source in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m13:02:54  Done.
+Traceback (most recent call last):
+  File "/workspace/scripts/manage.py", line 21, in <module>
+    run_dbt(args.arguments)
+  File "/workspace/scripts/runtime.py", line 20, in run_dbt
+    subprocess.run(["/opt/dbt/bin/dbt", *arguments, "--project-dir", "/workspace/dbt",
+  File "/usr/local/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/dbt/bin/dbt', 'source', 'freshness', '--project-dir', '/workspace/dbt', '--profiles-dir', '/workspace/dbt']' returned non-zero exit status 1.
+
